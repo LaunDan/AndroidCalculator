@@ -26,8 +26,8 @@
 
                 <Button
                     android:id="@+id/deleteAll"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -42,8 +42,8 @@
 
                 <Button
                     android:id="@+id/deleteOne"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -58,8 +58,8 @@
 
                 <Button
                     android:id="@+id/sqrt"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -74,8 +74,8 @@
 
                 <Button
                     android:id="@+id/plusMinus"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -95,8 +95,8 @@
 
                 <Button
                     android:id="@+id/seven"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -111,8 +111,8 @@
 
                 <Button
                     android:id="@+id/eight"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -127,8 +127,8 @@
 
                 <Button
                     android:id="@+id/nine"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -143,8 +143,8 @@
 
                 <Button
                     android:id="@+id/divide"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -164,8 +164,8 @@
 
                 <Button
                     android:id="@+id/four"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -180,8 +180,8 @@
 
                 <Button
                     android:id="@+id/five"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -196,8 +196,8 @@
 
                 <Button
                     android:id="@+id/six"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -212,8 +212,8 @@
 
                 <Button
                     android:id="@+id/multiple"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -233,8 +233,8 @@
 
                 <Button
                     android:id="@+id/one"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -249,8 +249,8 @@
 
                 <Button
                     android:id="@+id/two"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -265,8 +265,8 @@
 
                 <Button
                     android:id="@+id/three"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -281,8 +281,8 @@
 
                 <Button
                     android:id="@+id/minus"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -302,8 +302,8 @@
 
                 <Button
                     android:id="@+id/zero"
-                    android:layout_width="133dp"
-                    android:layout_height="55dp"
+                    android:layout_width="159dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -318,8 +318,8 @@
 
                 <Button
                     android:id="@+id/point"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -334,8 +334,8 @@
 
                 <Button
                     android:id="@+id/seven"
-                    android:layout_width="60dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
@@ -354,10 +354,20 @@
                 android:layout_height="64dp">
 
                 <Button
-                    android:id="@+id/button46"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:id="@+id/result"
+                    android:layout_width="325dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/buttonshape"
+                    android:onClick="result"
+                    android:shadowColor="#ffffffff"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="10"
+                    android:text="="
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp" />
             </TableRow>
 
         </LinearLayout>
