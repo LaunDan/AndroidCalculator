@@ -381,19 +381,19 @@
             android:layout_height="107dp">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/firstNumber"
                 android:layout_width="133dp"
                 android:layout_height="match_parent"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/operation"
                 android:layout_width="134dp"
                 android:layout_height="match_parent"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/secondNumber"
                 android:layout_width="121dp"
                 android:layout_height="match_parent"
                 android:text="TextView" />
@@ -404,10 +404,10 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/resultText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="HiBro" />
+                android:text="0" />
         </TableRow>
     </LinearLayout>
 
