@@ -373,9 +373,8 @@
         android:layout_width="389dp"
         android:layout_height="223dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toTopOf="parent">
+
+        app:layout_constraintStart_toStartOf="@+id/linearLayout">
 
         <TableRow
             android:layout_width="match_parent"
