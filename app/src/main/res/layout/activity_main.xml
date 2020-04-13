@@ -370,11 +370,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="389dp"
+        android:layout_width="330dp"
         android:layout_height="223dp"
         android:orientation="vertical"
 
-        app:layout_constraintStart_toStartOf="@+id/linearLayout">
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        tools:layout_editor_absoluteY="7dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -382,19 +383,19 @@
 
             <TextView
                 android:id="@+id/firstNumber"
-                android:layout_width="133dp"
+                android:layout_width="110dp"
                 android:layout_height="match_parent"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/operation"
-                android:layout_width="134dp"
+                android:layout_width="110dp"
                 android:layout_height="match_parent"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/secondNumber"
-                android:layout_width="121dp"
+                android:layout_width="110dp"
                 android:layout_height="match_parent"
                 android:text="TextView" />
         </TableRow>
