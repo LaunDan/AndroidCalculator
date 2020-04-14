@@ -388,7 +388,7 @@
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/operation"
+                android:id="@+id/symbol"
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
                 android:text="TextView" />

@@ -22,6 +22,13 @@ public class calcActivity extends AppCompatActivity {
         picture = findViewById(R.id.resultText);
         picture.setText("0");
 
-        
+        number1 = findViewById(R.id.firstNumber);
+        number1.setText("NaN");
+
+        number2 = findViewById(R.id.secondNumber);
+        number2.setText("NaN");
+
+        operation = findViewById(R.id.symbol);
+        operation.setText("...");
     }
 }
