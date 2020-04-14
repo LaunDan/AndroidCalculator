@@ -12,6 +12,14 @@ public class calcActivity extends AppCompatActivity {
     private TextView number2;
     private TextView operation;
 
+    private boolean passed = false;
+    private boolean n1Entered = false;
+
+    private double n1;
+    private double n2;
+    private double res;
+    private int method = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
