@@ -69,4 +69,16 @@ public class calcActivity extends AppCompatActivity {
             screen.append(push.getText());
         }
     }
+
+    public void registerPoint(View v) {
+        if (screen.getText().length() >= 8) {
+            return;
+        }
+        String test = screen.getText().toString();
+        String point = ".";
+        if (!test.contains(point)) {
+            screen.append(".");
+            passed = true;
+        }
+    }
 }
