@@ -81,4 +81,17 @@ public class calcActivity extends AppCompatActivity {
             passed = true;
         }
     }
+
+    public void daleteAll(View v) {
+        passed = false;
+        n1 = 0;
+        n2 = 0;
+        res = 0;
+        method = 5;
+
+        screen.setText("0");
+        number1.setText("NaN");
+        number2.setText("NaN");
+        operation.setText("...");
+    }
 }
