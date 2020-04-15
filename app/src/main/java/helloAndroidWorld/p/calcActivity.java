@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class calcActivity extends AppCompatActivity {
-    private TextView picture;
+    private TextView screen;
     private TextView number1;
     private TextView number2;
     private TextView operation;
@@ -29,8 +29,8 @@ public class calcActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
 
-        picture = findViewById(R.id.resultText);
-        picture.setText("0");
+        screen = findViewById(R.id.resultText);
+        screen.setText("0");
 
         number1 = findViewById(R.id.firstNumber);
         number1.setText("NaN");
@@ -43,30 +43,30 @@ public class calcActivity extends AppCompatActivity {
     }
 
     public void registerNumber(View sender) {
-        Button pull = (Button) sender;
-        float number = Float.parseFloat(tlac.getText().toString());
+        Button push = (Button) sender;
+        float number = Float.parseFloat(push.getText().toString());
 
-        int pom = obraz.length();
+        int pom = screen.length();
         if (pom >= 9) {
 
-            if (!prosel) {
+            if (!passed) {
                 if (number == 0) {
-                    obraz.setText("0");
+                    screen.setText("0");
                     return;
                 } else {
-                    obraz.setText(tlac.getText());
-                    prosel = true;
+                    screen.setText(push.getText());
+                    passed = true;
                 }
             }
             return;
         }
-        if (!prosel) {
+        if (!passed) {
             if (number != 0) {
-                obraz.setText(tlac.getText());
-                prosel = true;
+                screen.setText(push.getText());
+                passed = true;
             }
         } else {
-            obraz.append(tlac.getText());
+            screen.append(push.getText());
         }
     }
 }
