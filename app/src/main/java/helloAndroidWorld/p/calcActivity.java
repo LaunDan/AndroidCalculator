@@ -94,4 +94,17 @@ public class calcActivity extends AppCompatActivity {
         number2.setText("NaN");
         operation.setText("...");
     }
+
+    public void deleteOne(View v) {
+        int length = screen.length();
+
+        if (length > 1) {
+            String originString = screen.getText().toString();
+            String substring = originString.substring(0, length - 1);
+            screen.setText(substring);
+        } else if (length > 0) {
+            screen.setText("0");
+            passed = false;
+        }
+    }
 }
