@@ -2,6 +2,8 @@ package helloAndroidWorld.p;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,5 +40,33 @@ public class calcActivity extends AppCompatActivity {
 
         operation = findViewById(R.id.symbol);
         operation.setText("...");
+    }
+
+    public void registerNumber(View sender) {
+        Button pull = (Button) sender;
+        float number = Float.parseFloat(tlac.getText().toString());
+
+        int pom = obraz.length();
+        if (pom >= 9) {
+
+            if (!prosel) {
+                if (number == 0) {
+                    obraz.setText("0");
+                    return;
+                } else {
+                    obraz.setText(tlac.getText());
+                    prosel = true;
+                }
+            }
+            return;
+        }
+        if (!prosel) {
+            if (number != 0) {
+                obraz.setText(tlac.getText());
+                prosel = true;
+            }
+        } else {
+            obraz.append(tlac.getText());
+        }
     }
 }
