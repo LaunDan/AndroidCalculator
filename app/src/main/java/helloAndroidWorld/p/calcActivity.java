@@ -107,4 +107,23 @@ public class calcActivity extends AppCompatActivity {
             passed = false;
         }
     }
+
+    public void negative(View v) {
+        float k = Float.parseFloat(screen.getText().toString());
+        if (k == 0) {
+            return;
+        }
+        String test = obraz.getText().toString();
+        String hled = "-";
+
+        if (test.contains(hled)) {
+            test = test.replace("-", "");
+            obraz.setText(test);
+        } else {
+            if (test.length() <= 8) {
+                test = "-" + test;
+                obraz.setText(test);
+            }
+        }
+    }
 }
