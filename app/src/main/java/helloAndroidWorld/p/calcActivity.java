@@ -141,20 +141,20 @@ public class calcActivity extends AppCompatActivity {
                     screen.setText("1");
                     return;
                 } else {
-                    obraz.setText(substring);
+                    screen.setText(substring);
                     return;
                 }
             }
             if (number != 0) {
-                Double zbav = Double.parseDouble(vysledek);
-                int zbav2 = (int) Math.round(zbav);
-                obraz.setText(String.valueOf(zbav2));
+                Double getRidOf = Double.parseDouble(result);
+                int getRidOf2 = (int) Math.round(getRidOf);
+                screen.setText(String.valueOf(getRidOf2));
             } else {
-                obraz.setText("0");
+                screen.setText("0");
             }
         } else {
-            Toast.makeText(this, "Nelze odmocnit záporné číslo!", Toast.LENGTH_LONG).show();
-            vymazVse(v);
+            Toast.makeText(this, "It can't be sqrt", Toast.LENGTH_LONG).show();
+            deleteAll(v);
         }
     }
 }
