@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -127,17 +128,17 @@ public class calcActivity extends AppCompatActivity {
         }
     }
 
-    public void odmocni(View v) {
-        double number = Math.sqrt(Double.parseDouble(obraz.getText().toString()));
-        vymazVse(v);
+    public void sqrt(View v) {
+        double number = Math.sqrt(Double.parseDouble(screen.getText().toString()));
+        deleteAll(v);
 
         if (number >= 0) {
-            String vysledek = (String.valueOf(number));
+            String result = (String.valueOf(number));
 
-            if (vysledek.length() >= 9) {
-                String substring = vysledek.substring(0, 9);
+            if (result.length() >= 9) {
+                String substring = result.substring(0, 9);
                 if (substring.equals("1.0000000") || substring.equals("0.9999998") || substring.equals("0.9999999")) {
-                    obraz.setText("1");
+                    screen.setText("1");
                     return;
                 } else {
                     obraz.setText(substring);
