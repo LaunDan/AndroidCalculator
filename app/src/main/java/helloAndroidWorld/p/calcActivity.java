@@ -126,4 +126,34 @@ public class calcActivity extends AppCompatActivity {
             }
         }
     }
+
+    public void odmocni(View v) {
+        double number = Math.sqrt(Double.parseDouble(obraz.getText().toString()));
+        vymazVse(v);
+
+        if (number >= 0) {
+            String vysledek = (String.valueOf(number));
+
+            if (vysledek.length() >= 9) {
+                String substring = vysledek.substring(0, 9);
+                if (substring.equals("1.0000000") || substring.equals("0.9999998") || substring.equals("0.9999999")) {
+                    obraz.setText("1");
+                    return;
+                } else {
+                    obraz.setText(substring);
+                    return;
+                }
+            }
+            if (number != 0) {
+                Double zbav = Double.parseDouble(vysledek);
+                int zbav2 = (int) Math.round(zbav);
+                obraz.setText(String.valueOf(zbav2));
+            } else {
+                obraz.setText("0");
+            }
+        } else {
+            Toast.makeText(this, "Nelze odmocnit záporné číslo!", Toast.LENGTH_LONG).show();
+            vymazVse(v);
+        }
+    }
 }
