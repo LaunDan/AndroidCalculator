@@ -113,16 +113,16 @@ public class calcActivity extends AppCompatActivity {
         if (k == 0) {
             return;
         }
-        String test = obraz.getText().toString();
-        String hled = "-";
+        String test = screen.getText().toString();
+        String point = "-";
 
-        if (test.contains(hled)) {
+        if (test.contains(point)) {
             test = test.replace("-", "");
-            obraz.setText(test);
+            screen.setText(test);
         } else {
             if (test.length() <= 8) {
                 test = "-" + test;
-                obraz.setText(test);
+                screen.setText(test);
             }
         }
     }
