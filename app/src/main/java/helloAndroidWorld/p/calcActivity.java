@@ -170,5 +170,15 @@ public class calcActivity extends AppCompatActivity {
         operation.setText("+");
     }
 
-    
+    public void subtract(View v) {
+        n1 = Double.parseDouble(screen.getText().toString());
+
+        method = 2;
+        screen.setText("0");
+        passed = false;
+        n1Entered = true;
+
+        number1.setText(String.valueOf(n1));
+        operation.setText("-");
+    }
 }
