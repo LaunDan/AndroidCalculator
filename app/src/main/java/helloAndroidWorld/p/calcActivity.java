@@ -83,7 +83,7 @@ public class calcActivity extends AppCompatActivity {
         }
     }
 
-    public void daleteAll(View v) {
+    public void deleteAll(View v) {
         passed = false;
         n1 = 0;
         n2 = 0;
