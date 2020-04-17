@@ -157,4 +157,18 @@ public class calcActivity extends AppCompatActivity {
             deleteAll(v);
         }
     }
+
+    public void addUp(View v){
+        n1 = Double.parseDouble(screen.getText().toString());
+
+        method = 2;
+        screen.setText("0");
+        passed = false;
+        n1Entered = true;
+
+        number1.setText(String.valueOf(n1));
+        operation.setText("+");
+    }
+
+    
 }
