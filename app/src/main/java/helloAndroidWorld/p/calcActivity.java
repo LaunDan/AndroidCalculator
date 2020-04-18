@@ -205,4 +205,19 @@ public class calcActivity extends AppCompatActivity {
         number1.setText(String.valueOf(n1));
         operation.setText("/");
     }
+
+    public void count(View v){
+        if (n1Entered) {
+            if (method != 5){
+                n2 = Double.parseDouble(screen.getText().toString());
+                number2.setText(String.valueOf(n2));
+            }
+            switch (method){
+                case 1: {
+                    res = n1 + n2;
+                    
+                }
+            }
+        }
+    }
 }
