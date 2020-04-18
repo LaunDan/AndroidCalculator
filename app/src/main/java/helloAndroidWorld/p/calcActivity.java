@@ -194,5 +194,15 @@ public class calcActivity extends AppCompatActivity {
         operation.setText("*");
     }
 
-    
+    public void divide(View V){
+        n1 = Double.parseDouble(screen.getText().toString());
+
+        method = 4;
+        screen.setText("0");
+        passed = false;
+        n1Entered = true;
+
+        number1.setText(String.valueOf(n1));
+        operation.setText("/");
+    }
 }
