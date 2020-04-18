@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.DecimalFormat;
+
 public class calcActivity extends AppCompatActivity {
     private TextView screen;
     private TextView number1;
@@ -245,7 +247,29 @@ public class calcActivity extends AppCompatActivity {
             }
 
             if (res == 0) {
-                
+                screen.setText("0");
+            } else {
+                DecimalFormat df = new DecimalFormat("#.########");
+                String result = df.format(res);
+                result = result.replace(",", ".");
+
+                int poz = result.indexOf(".");
+                if (poz >= 8) {
+                    Toast.makeText(this, " Nine-digit limit was exceeded!", Toast.LENGTH_LONG).show();
+                    deleteAll(v);
+                    return;
+                }
+
+                if (result.length() >= 10) {
+                    String substring = result.substring(0, 9);
+                    screen.setText(substring);
+                    return;
+                } else {
+                    screen.setText(result);
+                }
+
+                n1Entered = false;
+                passed = false;
             }
         }
     }
