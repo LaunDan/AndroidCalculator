@@ -181,4 +181,18 @@ public class calcActivity extends AppCompatActivity {
         number1.setText(String.valueOf(n1));
         operation.setText("-");
     }
+
+    public void multiple(View V){
+        n1 = Double.parseDouble(screen.getText().toString());
+
+        method = 3;
+        screen.setText("0");
+        passed = false;
+        n1Entered = true;
+
+        number1.setText(String.valueOf(n1));
+        operation.setText("*");
+    }
+
+    
 }
