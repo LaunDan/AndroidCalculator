@@ -215,8 +215,37 @@ public class calcActivity extends AppCompatActivity {
             switch (method){
                 case 1: {
                     res = n1 + n2;
-                    
+                    method = 5;
+                    break;
                 }
+                case 2: {
+                    res = n1 - n2;
+                    method = 5;
+                    break;
+                }
+                case 3: {
+                    res = n1 * n2;
+                    method = 5;
+                    break;
+                }
+                case 4: {
+                    if (n2 != 0) {
+                        res = n1 / n2;
+                        method = 5;
+                        break;
+                    } else {
+                        Toast.makeText(this, "You can't devide with zero!", Toast.LENGTH_LONG).show();
+                        deleteAll(v);
+                        break;
+                    }
+                }
+                case 5: {
+                    break;
+                }
+            }
+
+            if (res == 0) {
+                
             }
         }
     }
