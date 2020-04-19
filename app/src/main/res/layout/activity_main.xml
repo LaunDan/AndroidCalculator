@@ -413,7 +413,7 @@
                 android:id="@+id/resultText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center_vertical"
+                android:gravity="top|center_horizontal"
                 android:textColor="#FFFFFF"
                 android:textSize="40sp"/>
         </TableRow>
