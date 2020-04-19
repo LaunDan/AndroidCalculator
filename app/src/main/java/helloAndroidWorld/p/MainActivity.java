@@ -104,9 +104,9 @@ public class MainActivity extends AppCompatActivity {
         method = 5;
 
         screen.setText("0");
-        number1.setText("NaN");
-        number2.setText("NaN");
-        operation.setText("...");
+        number1.setText("");
+        number2.setText("");
+        operation.setText("");
     }
 
     public void deleteOne(View v) {

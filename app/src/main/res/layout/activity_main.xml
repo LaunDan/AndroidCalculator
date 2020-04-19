@@ -384,7 +384,7 @@
                 android:id="@+id/firstNumber"
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
-                android:gravity="right"
+                android:gravity="center_vertical|center_horizontal"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp"/>
 
@@ -400,7 +400,7 @@
                 android:id="@+id/secondNumber"
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
-                android:gravity="left"
+                android:gravity="center_vertical|center_horizontal"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp"/>
         </TableRow>
