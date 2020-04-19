@@ -374,8 +374,6 @@
         android:layout_width="330dp"
         android:layout_height="223dp"
         android:orientation="vertical"
-
-
         app:layout_constraintStart_toStartOf="@+id/linearLayout">
 
         <TableRow
