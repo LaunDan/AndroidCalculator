@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void addUp(View v){
+    public void addUp(View v) {
         n1 = Double.parseDouble(screen.getText().toString());
 
         method = 1;
@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
         operation.setText("-");
     }
 
-    public void multiple(View V){
+    public void multiple(View V) {
         n1 = Double.parseDouble(screen.getText().toString());
 
         method = 3;
@@ -207,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
         operation.setText("*");
     }
 
-    public void divide(View V){
+    public void divide(View V) {
         n1 = Double.parseDouble(screen.getText().toString());
 
         method = 4;
@@ -219,13 +219,13 @@ public class MainActivity extends AppCompatActivity {
         operation.setText("/");
     }
 
-    public void count(View v){
+    public void count(View v) {
         if (n1Entered) {
-            if (method != 5){
+            if (method != 5) {
                 n2 = Double.parseDouble(screen.getText().toString());
                 number2.setText(String.valueOf(n2));
             }
-            switch (method){
+            switch (method) {
                 case 1: {
                     res = n1 + n2;
                     method = 5;
