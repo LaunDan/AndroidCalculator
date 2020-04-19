@@ -47,13 +47,13 @@ public class MainActivity extends AppCompatActivity {
         screen.setText("0");
 
         number1 = findViewById(R.id.firstNumber);
-        number1.setText("NaN");
+        number1.setText("");
 
         number2 = findViewById(R.id.secondNumber);
-        number2.setText("NaN");
+        number2.setText("");
 
         operation = findViewById(R.id.symbol);
-        operation.setText("...");
+        operation.setText("");
     }
 
     public void registerNumber(View sender) {

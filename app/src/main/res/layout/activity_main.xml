@@ -383,17 +383,26 @@
             <TextView
                 android:id="@+id/firstNumber"
                 android:layout_width="110dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
 
             <TextView
                 android:id="@+id/symbol"
                 android:layout_width="110dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
 
             <TextView
                 android:id="@+id/secondNumber"
                 android:layout_width="110dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
         </TableRow>
 
         <TableRow
@@ -403,7 +412,10 @@
             <TextView
                 android:id="@+id/resultText"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"/>
         </TableRow>
     </LinearLayout>
 
