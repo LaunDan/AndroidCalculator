@@ -69,13 +69,13 @@
                     android:textSize="30sp" />
 
                 <Button
-                    android:id="@+id/plusMinus"
+                    android:id="@+id/negative"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
-                    android:onClick="plusMinus"
+                    android:onClick="negative"
                     android:shadowColor="#ffffffff"
                     android:shadowDx="0"
                     android:shadowDy="0"
@@ -276,13 +276,13 @@
                     android:textSize="30sp" />
 
                 <Button
-                    android:id="@+id/minus"
+                    android:id="@+id/subtract"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
-                    android:onClick="minus"
+                    android:onClick="subtract"
                     android:shadowColor="#ffffffff"
                     android:shadowDx="0"
                     android:shadowDy="0"
@@ -314,13 +314,13 @@
                     android:textSize="30sp" />
 
                 <Button
-                    android:id="@+id/point"
+                    android:id="@+id/registerPoint"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
-                    android:onClick="point"
+                    android:onClick="registerPoint"
                     android:shadowColor="#ffffffff"
                     android:shadowDx="0"
                     android:shadowDy="0"
@@ -330,13 +330,13 @@
                     android:textSize="30sp" />
 
                 <Button
-                    android:id="@+id/plus"
+                    android:id="@+id/addUp"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
-                    android:onClick="plus"
+                    android:onClick="addUp"
                     android:shadowColor="#ffffffff"
                     android:shadowDx="0"
                     android:shadowDy="0"
@@ -351,12 +351,13 @@
                 android:layout_height="77dp">
 
                 <Button
-                    android:id="@+id/result"
+                    android:id="@+id/count"
                     android:layout_width="325dp"
                     android:layout_height="75dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:background="@drawable/buttonshape"
+                    android:onClick="count"
                     android:shadowColor="#ffffffff"
                     android:shadowDx="0"
                     android:shadowDy="0"
@@ -374,30 +375,27 @@
         android:layout_height="223dp"
         android:orientation="vertical"
 
-        app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        tools:layout_editor_absoluteY="7dp">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="107dp">
 
             <TextView
-                android:id="@+id/firstNumber"
+                android:id="@+id/number1"
                 android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:text="TextView" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/symbol"
+                android:id="@+id/operation"
                 android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:text="TextView" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/secondNumber"
+                android:id="@+id/number2"
                 android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:text="TextView" />
+                android:layout_height="match_parent" />
         </TableRow>
 
         <TableRow
@@ -405,10 +403,9 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/resultText"
+                android:id="@+id/screen"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="0" />
+                android:layout_height="match_parent" />
         </TableRow>
     </LinearLayout>
 

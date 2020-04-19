@@ -163,7 +163,7 @@ public class calcActivity extends AppCompatActivity {
     public void addUp(View v){
         n1 = Double.parseDouble(screen.getText().toString());
 
-        method = 2;
+        method = 1;
         screen.setText("0");
         passed = false;
         n1Entered = true;
