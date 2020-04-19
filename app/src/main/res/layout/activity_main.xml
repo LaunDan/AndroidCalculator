@@ -375,7 +375,7 @@
         android:layout_height="223dp"
         android:orientation="vertical"
 
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+
         app:layout_constraintStart_toStartOf="@+id/linearLayout">
 
         <TableRow
@@ -383,17 +383,17 @@
             android:layout_height="107dp">
 
             <TextView
-                android:id="@+id/number1"
+                android:id="@+id/firstNumber"
                 android:layout_width="110dp"
                 android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/operation"
+                android:id="@+id/symbol"
                 android:layout_width="110dp"
                 android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/number2"
+                android:id="@+id/secondNumber"
                 android:layout_width="110dp"
                 android:layout_height="match_parent" />
         </TableRow>
@@ -403,7 +403,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/screen"
+                android:id="@+id/resultText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </TableRow>
