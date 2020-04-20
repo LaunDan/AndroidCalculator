@@ -1,6 +1,7 @@
 package helloAndroidWorld.p;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -13,8 +14,7 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
 
         ImageView imgvwSpsoa = findViewById(R.id.imageView2);
         Animation animSpsoaLogo = AnimationUtils.loadAnimation(this, R.anim.weclome_sc);
