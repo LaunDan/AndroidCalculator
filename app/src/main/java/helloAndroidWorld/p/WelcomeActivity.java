@@ -28,10 +28,12 @@ public class WelcomeActivity extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN
                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
 
-        ImageView imgvwSpsoa = findViewById(R.id.imageView2);
-        Animation animSpsoaLogo = AnimationUtils.loadAnimation(this, R.anim.weclome_sc);
-
-        imgvwSpsoa.startAnimation(animSpsoaLogo);
+        ImageView imgvwSpsoa2 = findViewById(R.id.imageView2);
+        Animation animSpsoaLogo2 = AnimationUtils.loadAnimation(this, R.anim.weclome2_sc);
+        ImageView imgvwSpsoa1 = findViewById(R.id.imageView);
+        Animation animSpsoaLogo1 = AnimationUtils.loadAnimation(this, R.anim.welcome1_sc);
+        imgvwSpsoa1.startAnimation(animSpsoaLogo1);
+        imgvwSpsoa2.startAnimation(animSpsoaLogo2);
         Thread thrdWlcmscrnDelay = new Thread() {
             public void run() {
                 try {
