@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
 
         screen = findViewById(R.id.resultText);
-        screen.setText("");
+        screen.setText("0");
 
         number1 = findViewById(R.id.firstNumber);
         number1.setText("");
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         res = 0;
         method = 5;
 
-        screen.setText("");
+        screen.setText("0");
         number1.setText("");
         number2.setText("");
         operation.setText("");
