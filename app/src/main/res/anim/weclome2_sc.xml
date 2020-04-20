@@ -15,7 +15,7 @@
         android:fromYDelta="-80%p"
         android:toYDelta="0%p"
         android:duration="1750"
-        android:startOffset="1250"
+        android:startOffset="500"
         android:repeatCount="0"/>
 
 </set>

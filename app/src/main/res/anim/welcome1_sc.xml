@@ -8,7 +8,7 @@
         android:toAlpha="1.0"
         android:interpolator="@android:anim/accelerate_interpolator"
         android:duration="3000"
-        android:startOffset="3000"
+        android:startOffset="2500"
         android:repeatCount="0"
         />
 

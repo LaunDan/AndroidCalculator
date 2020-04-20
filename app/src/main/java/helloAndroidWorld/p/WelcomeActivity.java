@@ -37,7 +37,7 @@ public class WelcomeActivity extends AppCompatActivity {
         Thread thrdWlcmscrnDelay = new Thread() {
             public void run() {
                 try {
-                    sleep(7000);
+                    sleep(6000);
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 } catch (InterruptedException e) {
                     e.printStackTrace();
