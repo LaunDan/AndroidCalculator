@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WelcomeActivity"
-    android:background="@drawable/temporary_backgraund"
+    android:background="@color/colorBlack"
     android:keepScreenOn="true">
 
     <ImageView

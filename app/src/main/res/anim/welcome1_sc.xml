@@ -8,14 +8,10 @@
         android:toAlpha="1.0"
         android:interpolator="@android:anim/accelerate_interpolator"
         android:duration="3000"
+        android:startOffset="3000"
         android:repeatCount="0"
         />
 
-    <translate
-        android:fromYDelta="-70%p"
-        android:toYDelta="5%p"
-        android:duration="1750"
-        android:startOffset="3000"
-        android:repeatCount="0"/>
+
 
 </set>
