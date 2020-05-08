@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class WelcomeActivity extends AppCompatActivity {
 
     private View decorView;
+    private boolean actStarted = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,14 +39,24 @@ public class WelcomeActivity extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(4000);
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    if (!actStarted) {
+                        startAct();
+                    }
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                } finally {
-                    finish();
                 }
             }
         };
         thrdWlcmscrnDelay.start();
+    }
+
+    private void startAct(){
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
+    }
+
+    public void startOnClick(View v){
+        actStarted = true;
+        startAct();
     }
 }
